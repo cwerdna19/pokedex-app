@@ -3,18 +3,16 @@
   <h1>{{pageTitle}}</h1>
 
   <div>
-    <mat-sidenav-container style='position:absolute'>
-      <mat-sidenav mode='side' opened>
-        Sidenav Content
+    <mat-sidenav-container style='position: absolute; right:0;left:0;bottom:0;top:50px'>
+      <mat-sidenav mode='side' opened class='m-1'>
+        <div class='m-2'>Sidenav Content</div>
       </mat-sidenav>
       
       <mat-sidenav-content>
         <pkmn-list></pkmn-list>
-        
       </mat-sidenav-content>
       
     </mat-sidenav-container>
   </div>
 
 </div>
-

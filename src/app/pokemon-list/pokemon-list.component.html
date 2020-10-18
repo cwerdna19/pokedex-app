@@ -1,12 +1,12 @@
-<div>
+<div class='ml-4'>
 
     <div>
         <h3>Pokemon List!</h3>
     </div>
 
     <div>
-        <div fxLayout='row wrap' fxLayoutAlign='start'>
-            <div fxFlex='200px' class='text-center border m-2 py-5' *ngFor='let pkmn of pokemon' >
+        <div fxLayout='row wrap' fxLayoutAlign='center' style='height: 100%'>
+            <div fxFlex='200px' class='text-center border m-2 py-2' *ngFor='let pkmn of pokemon' >
                 <div>{{pkmn.type}}</div>
                 <img [src]='pkmn.imageUrl' [style.width.px]='imageWidth' [style.height.px]='imageWidth' [title]='pkmn.name'/>
                 <div class='text-center'>{{pkmn.name}}</div>
