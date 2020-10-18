@@ -1,17 +1,22 @@
-<div class='ml-4'>
-
+<div class='mt-2'>
+    
     <div>
-        <h3>Pokemon List!</h3>
-    </div>
+        
+        <div fxLayout='row' fxLayoutGap='10%'>
+            <div>
+                <strong style='margin: 45px'>Pokemon List!</strong>
+            </div>
+        </div>
 
-    <div>
-        <div fxLayout='row wrap' fxLayoutAlign='center' style='height: 100%'>
-            <div fxFlex='200px' class='text-center border m-2 py-2' *ngFor='let pkmn of pokemon' >
+        <div fxLayout='row wrap' fxLayoutAlign='center'>
+            <div fxFlex='160px' class='text-center border m-2 py-2' *ngFor='let pkmn of pokemon' >
                 <div>{{pkmn.type}}</div>
                 <img [src]='pkmn.imageUrl' [style.width.px]='imageWidth' [style.height.px]='imageWidth' [title]='pkmn.name'/>
                 <div class='text-center'>{{pkmn.name}}</div>
                 <div>#{{pkmn.number}}</div>
             </div>
         </div>
+    
     </div>
+
 </div>

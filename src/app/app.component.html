@@ -1,11 +1,13 @@
 <div>
-
-  <h1>{{pageTitle}}</h1>
+  <mat-toolbar>
+    {{pageTitle}}
+  </mat-toolbar>
+  
 
   <div>
-    <mat-sidenav-container style='position: absolute; right:0;left:0;bottom:0;top:50px'>
-      <mat-sidenav mode='side' opened class='m-1'>
-        <div class='m-2'>Sidenav Content</div>
+    <mat-sidenav-container style='position: absolute; right:0;left:0;bottom:0;top:60px'>
+      <mat-sidenav mode='side' opened>
+        <div>Sidenav Content</div>
       </mat-sidenav>
       
       <mat-sidenav-content>
