@@ -5,8 +5,8 @@
     </div>
 
     <div>
-        <div fxLayout='row wrap' fxLayoutAlign='start' fxLayoutGap='25px grid'>
-            <div fxFlex='100px' *ngFor='let pkmn of pokemon' class='text-center '>
+        <div fxLayout='row wrap' fxLayoutAlign='start'>
+            <div fxFlex='200px' *ngFor='let pkmn of pokemon' class='text-center border m-2 py-5'>
                 <img [src]='pkmn.imageUrl' [style.width.px]='imageWidth' [style.height.px]='imageWidth' [title]='pkmn.name'/>
                 <div class='text-center'>{{pkmn.name}}</div>
             </div>
