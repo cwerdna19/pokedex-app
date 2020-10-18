@@ -1,13 +1,13 @@
-<div style='display: flex;'>
+<div>
 
-    <div class=''>
+    <div>
         <h3>Pokemon List!</h3>
     </div>
 
-    <div class='container-fluid mt-4'>
-        <div class='row'>
-            <div class='col-lg-1 col-md-2 col-sm-3 col-5 border border-primary rounded p-2 m-1' *ngFor='let pkmn of pokemon'>
-                <img class='center-image' [src]='pkmn.imageUrl' [style.width.px]='imageWidth' [style.height.px]='imageWidth' [title]='pkmn.name'/>
+    <div>
+        <div fxLayout='row wrap' fxLayoutAlign='start' fxLayoutGap='25px grid'>
+            <div fxFlex='100px' *ngFor='let pkmn of pokemon' class='text-center '>
+                <img [src]='pkmn.imageUrl' [style.width.px]='imageWidth' [style.height.px]='imageWidth' [title]='pkmn.name'/>
                 <div class='text-center'>{{pkmn.name}}</div>
             </div>
         </div>

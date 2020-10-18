@@ -1,8 +1,14 @@
-<div class='float-left'>
-  <nav class='nav bg-info flex-column vh-100 p-2 mr-4'>
+<div fxLayout='row'>
     <h1>{{pageTitle}}</h1>
-  </nav>
 </div>
-<div class='float'>
+
+<div>
+  <mat-sidenav-container>
+    <mat-sidenav opened mode='side'>Start</mat-sidenav>
+    <mat-sidenav-content>Main</mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<div>
   <pkmn-list></pkmn-list>
 </div>
