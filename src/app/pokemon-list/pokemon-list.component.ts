@@ -20,8 +20,7 @@ export class PokemonListComponent implements OnInit {
   constructor(private pokemonService: PokemonService) { }
 
   clickedTest(): void {
-    for (let x in this.pokemonList)
-      console.log(this.pokemonList[x])
+      console.log(this.pokemonList)
   }
 
   ngOnInit(): void {
