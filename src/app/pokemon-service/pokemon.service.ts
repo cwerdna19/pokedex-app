@@ -16,31 +16,28 @@ export class PokemonService {
 
     constructor(private http: HttpClient) { }
 
-    getPokemon(pokemon: object): Observable<IPokemon[]> {
-        return this.http.get<IPokemon[]>(`${this.url}`);
+    getPokemon(urls: any): Observable<any> {
+        for (let x in urls) {
+            return this.http.get<any>(x);
+        }
     }
 
     getIndigoPokemonList(): Observable<any> {
         return this.http.get<any>(`${this.url}/pokemon?limit=151`).pipe(
             pluck('results'),
-            tap((data: any) => {
+            tap((data) => {
                     for (let x in data) {
                         console.log(data[x].url)
                     }
                 }
             ),
-            map((data: any) => {
+            map((data) => {
+                let urls = []
                 for (let x in data) {
-                    return data[x].url
+                    urls.push(data[x].url)
                 }
+                return urls
             })
         );
-        
-        // return this.http.get<any>(this.url,{
-        //     headers: new HttpHeaders({
-        //         'Accept': 'application/json'
-        //     })}).pipe(
-        //     tap(data => console.log('All: ' + JSON.stringify(data))));
     }
-
 }

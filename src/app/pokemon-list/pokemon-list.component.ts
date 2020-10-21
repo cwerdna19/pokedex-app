@@ -27,7 +27,7 @@ export class PokemonListComponent implements OnInit {
     this.pokemonService.getIndigoPokemonList().subscribe({
       next: data => {
         this.pokemonList = data;
-        
+        console.log(this.pokemonList)
       },  
       error: (err: any) => {
         console.log(err);
