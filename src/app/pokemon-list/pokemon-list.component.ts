@@ -15,17 +15,24 @@ export class PokemonListComponent implements OnInit {
   tableRowPadding: number = 0;
   
   pokemon: IPokemon[];
-  pokemonList;
+  pokemonList = [];
 
   constructor(private pokemonService: PokemonService) { }
 
+  clickedTest(): void {
+    console.log(this.pokemonList)
+  }
+
   ngOnInit(): void {
-    this.pokemonService.getIndigoPokemonList()
-      .subscribe(
-        (data: IPokemonList[] ) => this.pokemonList = data,
-        (err: any) => console.log(err),
-        () => console.log(this.pokemonList)
-      );
+    this.pokemonService.getIndigoPokemonList().subscribe({
+      next: data => {
+        this.pokemonList = data;
+        console.log(data);
+      },  
+      error: (err: any) => {
+        console.log(err);
+      }
+    });
   }
 
 }

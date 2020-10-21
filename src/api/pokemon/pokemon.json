@@ -1,44 +1,170 @@
 [
-    {
-        "name": "Bulbasaur",
-        "type": "Grass/Poison",
-        "number": 1,
-        "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.",
-        "imageUrl": "assets/images/1.png"
-    },
-    {
-        "name": "Ivysaur",
-        "type": "Grass/Poison",
-        "number": 2,
-        "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
-        "imageUrl": "assets/images/2.png"
-    },
-    {
-        "name": "Venusaur",
-        "type": "Grass/Poison",
-        "number": 3,
-        "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
-        "imageUrl": "assets/images/3.png"
-    },
-    {
-        "name": "Charmander",
-        "type": "Fire",
-        "number": 4,
-        "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
-        "imageUrl": "assets/images/4.png"
-    },
-    {
-        "name": "Charmeleon",
-        "type": "Fire",
-        "number": 5,
-        "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
-        "imageUrl": "assets/images/5.png"
-    },
-    {
-        "name": "Charizard",
-        "type": "Fire/Flying",
-        "number": 6,
-        "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
-        "imageUrl": "assets/images/6.png"
-    }
+  {
+    "name": "Bulbasaur",
+    "type": "Grass/Poison",
+    "number": 1,
+    "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.",
+    "imageUrl": "assets/images/1.png"
+  },
+  {
+    "name": "Ivysaur",
+    "type": "Grass/Poison",
+    "number": 2,
+    "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+    "imageUrl": "assets/images/2.png"
+  },
+  {
+    "name": "Venusaur",
+    "type": "Grass/Poison",
+    "number": 3,
+    "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+    "imageUrl": "assets/images/3.png"
+  },
+  {
+    "name": "Charmander",
+    "type": "Fire",
+    "number": 4,
+    "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+    "imageUrl": "assets/images/4.png"
+  },
+  {
+    "name": "Charmeleon",
+    "type": "Fire",
+    "number": 5,
+    "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
+    "imageUrl": "assets/images/5.png"
+  },
+  {
+    "name": "Charizard",
+    "type": "Fire/Flying",
+    "number": 6,
+    "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+    "imageUrl": "assets/images/6.png"
+  },
+  {
+    "name": "Squirtle",
+    "type": "Water",
+    "number": 7,
+    "description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
+    "imageUrl": "assets/images/7.png"
+  },
+  {
+    "name": "Wartortle",
+    "type": "Water",
+    "number": 8,
+    "description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
+    "imageUrl": "assets/images/8.png"
+  },
+  {
+    "name": "Blastoise",
+    "type": "Water",
+    "number": 9,
+    "description": "A brutal Pokémon with pressurized water jets on its shell. They are used for high speed tackles.",
+    "imageUrl": "assets/images/9.png"
+  },
+  {
+    "name": "Caterpie",
+    "type": "Bug",
+    "number": 10,
+    "description": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
+    "imageUrl": "assets/images/10.png"
+  },
+  {
+    "name": "Metapod",
+    "type": "Bug",
+    "number": 11,
+    "description": "This Pokémon is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
+    "imageUrl": "assets/images/11.png"
+  },
+  {
+    "name": "Butterfree",
+    "type": "Bug/Flying",
+    "number": 12,
+    "description": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
+    "imageUrl": "assets/images/12.png"
+  },
+  {
+    "name": "Weedle",
+    "type": "Bug/Poison",
+    "number": 13,
+    "description": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head.",
+    "imageUrl": "assets/images/13.png"
+  },
+  {
+    "name": "Kakuna",
+    "type": "Bug/Poison",
+    "number": 14,
+    "description": "Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators.",
+    "imageUrl": "assets/images/14.png"
+  },
+  {
+    "name": "Beedrill",
+    "type": "Bug/Poison",
+    "number": 15,
+    "description": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.",
+    "imageUrl": "assets/images/15.png"
+  },
+  {
+    "name": "Pidgey",
+    "type": "Normal/Flying",
+    "number": 16,
+    "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+    "imageUrl": "assets/images/16.png"
+  },
+  {
+    "name": "Pidgeotto",
+    "type": "Normal/Flying",
+    "number": 17,
+    "description": "Very protective of its sprawling territorial area, this Pokémon will fiercely peck at any intruder.",
+    "imageUrl": "assets/images/17.png"
+  },
+  {
+    "name": "Pidgeot",
+    "type": "Normal/Flying",
+    "number": 18,
+    "description": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as Magikarp.",
+    "imageUrl": "assets/images/18.png"
+  },
+  {
+    "name": "Rattata",
+    "type": "Normal",
+    "number": 19,
+    "description": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
+    "imageUrl": "assets/images/19.png"
+  },
+  {
+    "name": "Raticate",
+    "type": "Normal",
+    "number": 20,
+    "description": "It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.",
+    "imageUrl": "assets/images/20.png"
+  },
+  {
+    "name": "Spearow",
+    "type": "Normal/Flying",
+    "number": 21,
+    "description": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.",
+    "imageUrl": "assets/images/21.png"
+  },
+  {
+    "name": "Fearow",
+    "type": "Normal/Flying",
+    "number": 22,
+    "description": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
+    "imageUrl": "assets/images/22.png"
+  },
+  {
+    "name": "Ekans",
+    "type": "Poison",
+    "number": 23,
+    "description": "Moves silently and stealthily. Eats the eggs of birds, such as Pidgey and Spearow, whole.",
+    "imageUrl": "assets/images/23.png"
+  },
+  {
+    "name": "Arbok",
+    "type": "Poison",
+    "number": 24,
+    "description": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
+    "imageUrl": "assets/images/24.png"
+  }
 ]
