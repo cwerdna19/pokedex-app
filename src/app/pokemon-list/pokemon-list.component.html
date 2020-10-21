@@ -9,11 +9,12 @@
         </div>
 
         <div fxLayout='row wrap' fxLayoutAlign='center'>
-            <div fxFlex='160px' class='text-center border m-2 py-2' *ngFor='let pkmn of pokemon' >
-                <div>{{pkmn.type}}</div>
+            <div fxFlex='160px' class='text-center border m-2 py-2'>
+                {{pokemonList}}
+                <!-- <div>{{pkmn.type}}</div>
                 <img [src]='pkmn.imageUrl' [style.width.px]='imageWidth' [style.height.px]='imageWidth' [title]='pkmn.name'/>
                 <div class='text-center'>{{pkmn.name}}</div>
-                <div>#{{pkmn.number}}</div>
+                <div>#{{pkmn.number}}</div> -->
             </div>
         </div>
     
