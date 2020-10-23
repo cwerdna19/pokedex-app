@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Observable } from 'rxjs';
-import { pluck, tap, map } from 'rxjs/operators';
+import { pluck, tap, map, concatAll, concatMap } from 'rxjs/operators';
 
 import { IPokemon } from '../pokemon-list/pokemon';
 import { IPokemonList } from '../pokemon-list/pokemon-list';
@@ -23,21 +23,17 @@ export class PokemonService {
     }
 
     getIndigoPokemonList(): Observable<any> {
-        return this.http.get<any>(`${this.url}/pokemon?limit=151`).pipe(
+        return this.http.get<any>(`${this.url}/pokemon?limit=893`).pipe(
             pluck('results'),
-            tap((data) => {
-                    for (let x in data) {
-                        console.log(data[x].url)
-                    }
-                }
-            ),
             map((data) => {
-                let urls = []
-                for (let x in data) {
-                    urls.push(data[x].url)
+                let pokemonData = []
+                for (let x of data) {
+                    pokemonData.push(this.http.get(x.url))
                 }
-                return urls
-            })
+                return pokemonData
+            }),
+            concatAll(),
+            concatMap(data => data)
         );
     }
 }

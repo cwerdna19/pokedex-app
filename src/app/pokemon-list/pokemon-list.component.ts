@@ -10,24 +10,23 @@ import { PokemonService } from '../pokemon-service/pokemon.service';
   styleUrls: ['./pokemon-list.component.css']
 })
 export class PokemonListComponent implements OnInit {
-  imageWidth: number = 50;
+  imageWidth: number = 75;
   imageMargin: number = 2;
   tableRowPadding: number = 0;
   
   pokemon: IPokemon[];
-  pokemonList;
+  pokemonList = [];
 
   constructor(private pokemonService: PokemonService) { }
 
   clickedTest(): void {
-      console.log(this.pokemonList)
+      console.log(this.pokemonList[0].sprites.other['official-artwork'].front_default)
   }
 
   ngOnInit(): void {
     this.pokemonService.getIndigoPokemonList().subscribe({
       next: data => {
-        this.pokemonList = data;
-        console.log(this.pokemonList)
+        this.pokemonList.push(data);
       },  
       error: (err: any) => {
         console.log(err);
