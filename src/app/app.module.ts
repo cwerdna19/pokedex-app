@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -19,8 +21,10 @@ import { PokemonCacheInterceptor } from './pokemon-service/pokemon-cache.interce
     BrowserModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
+    MatIconModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatListModule,
     HttpClientModule
   ],
   providers: [
