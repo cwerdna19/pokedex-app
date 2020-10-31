@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 import { IPokemon } from './pokemon';
-import { IPokemonList } from './pokemon-list';
 import { PokemonService } from '../pokemon-service/pokemon.service';
+
+declare var $: any;
 
 @Component({
   selector: 'pkmn-list',
@@ -16,11 +17,13 @@ export class PokemonListComponent implements OnInit {
   
   pokemon: IPokemon[];
   pokemonList = [];
+  pokemonClicked: any;
 
   constructor(private pokemonService: PokemonService) { }
 
-  clickedTest(): void {
-      console.log(this.pokemonList[0].sprites.other['official-artwork'].front_default)
+  onPokemonClick(value: any) {
+    this.pokemonClicked = value;
+    console.log(`We just clicked ${value.name}!`);
   }
 
   ngOnInit(): void {
@@ -32,6 +35,7 @@ export class PokemonListComponent implements OnInit {
         console.log(err);
       }
     });
+    $('body').append($('#pokemonDetail'));
   }
 
 }

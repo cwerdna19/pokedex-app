@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 import { pluck, tap, map, concatAll, concatMap } from 'rxjs/operators';
 
 import { IPokemon } from '../pokemon-list/pokemon';
-import { IPokemonList } from '../pokemon-list/pokemon-list';
 
 @Injectable({
     providedIn: 'root'
@@ -23,7 +22,7 @@ export class PokemonService {
     }
 
     getIndigoPokemonList(): Observable<any> {
-        return this.http.get<any>(`${this.url}/pokemon?limit=893`).pipe(
+        return this.http.get<any>(`${this.url}/pokemon?limit=151`).pipe(
             pluck('results'),
             map((data) => {
                 let pokemonData = []

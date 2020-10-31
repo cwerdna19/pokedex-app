@@ -1,7 +1,6 @@
+<pkmn-detail [pokemonShown]='pokemonClicked'></pkmn-detail>
 <div class='mt-2'>
-    
     <div>
-        <button class='btn btn-primary m-2' (click)='clickedTest()'>Test</button>
         <div fxLayout='row' fxLayoutGap='10%'>
             <div>
                 <strong style='margin: 45px'>Pokemon List!</strong>
@@ -9,17 +8,21 @@
         </div>
 
         <div fxLayout='row wrap' fxLayoutAlign='center'>
-            <div fxFlex='160px' class='text-center border m-2 py-2' *ngFor='let pkmn of pokemonList'>
-                <img [src]='this.pkmn.sprites.other["official-artwork"].front_default' [style.width.px]='imageWidth' [style.height.px]='imageWidth' [title]='pkmn.name'/>
-                <div class='text-center'>{{pkmn.name}}</div>
+            <div fxFlex='160px'
+                class='text-center border m-2 py-2' 
+                data-toggle="modal"
+                data-target='#pokemonDetail' 
+                (click)='onPokemonClick(pkmn)'
+                *ngFor='let pkmn of pokemonList'>
+
+                <img [src]='this.pkmn.sprites.other["official-artwork"].front_default'
+                    [style.width.px]='imageWidth' [style.height.px]='imageWidth'
+                    [title]='pkmn.name'/>
+                <div class='text-center'>{{ pkmn.name }}</div>
                 
-                <!-- <div>{{pkmn.type}}</div>
-                {{pkmn.sprites.other.official-artwork.front_default}}
-                <div class='text-center'>{{pkmn.name}}</div>
-                <div>#{{pkmn.number}}</div> -->
             </div>
         </div>
-    
+
     </div>
 
 </div>
