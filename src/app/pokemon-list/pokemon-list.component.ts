@@ -11,12 +11,13 @@ declare var $: any;
   styleUrls: ['./pokemon-list.component.css']
 })
 export class PokemonListComponent implements OnInit {
-  imageWidth: number = 75;
+  imageWidth: number = 160;
   imageMargin: number = 2;
   tableRowPadding: number = 0;
   
-  pokemon: IPokemon[];
+  //pokemon: IPokemon[];
   pokemonList = [];
+
   pokemonClicked: any;
 
   constructor(private pokemonService: PokemonService) { }

@@ -22,7 +22,7 @@ export class PokemonService {
     }
 
     getIndigoPokemonList(): Observable<any> {
-        return this.http.get<any>(`${this.url}/pokemon?limit=151`).pipe(
+        return this.http.get<any>(`${this.url}/pokemon?limit=893`).pipe(
             pluck('results'),
             map((data) => {
                 let pokemonData = []

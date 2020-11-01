@@ -1,21 +1,20 @@
 <div>
-  <mat-toolbar>
+  <mat-toolbar class="pokedex-header">
     {{pageTitle}}
   </mat-toolbar>
   
   <div fxLayout='row'>
     <mat-sidenav-container style='position: absolute; right:0;left:0;bottom:0;top:60px;'>
-      <mat-sidenav mode='side' opened fxFlex='100%'>
+      <mat-sidenav mode='side' opened fxFlex='100%' id="pokedex-sidenav">
         <mat-nav-list>
           <mat-list-item>
             <mat-icon mat-list-icon>folder</mat-icon>
           </mat-list-item>
           <mat-list-item> <button class='btn btn-primary m-2'>Sort</button> </mat-list-item>
         </mat-nav-list>
-      </mat-sidenav>
+      </mat-sidenav>   
       
-      
-      <mat-sidenav-content>
+      <mat-sidenav-content class="pokedex-main">
         <pkmn-list></pkmn-list>
       </mat-sidenav-content>
       

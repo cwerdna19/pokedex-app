@@ -9,14 +9,15 @@
 
         <div fxLayout='row wrap' fxLayoutAlign='center'>
             <div fxFlex='160px'
-                class='text-center border m-2 py-2' 
+                class='text-center m-2 py-2 border border-dark rounded' 
                 data-toggle="modal"
                 data-target='#pokemonDetail' 
                 (click)='onPokemonClick(pkmn)'
+                style="background-color: moccasin;"
                 *ngFor='let pkmn of pokemonList'>
-
+                <div class='text-right mr-2'>#{{ pkmn.id }}</div>
                 <img [src]='this.pkmn.sprites.other["official-artwork"].front_default'
-                    [style.width.px]='imageWidth' [style.height.px]='imageWidth'
+                    [style.width.px]='imageWidth'
                     [title]='pkmn.name'/>
                 <div class='text-center'>{{ pkmn.name }}</div>
                 
